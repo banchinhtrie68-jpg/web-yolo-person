@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>YOLO AI – Person Detection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>YOLO AI Dashboard</h1>
+        <span class="status online">● Online</span>
+    </header>
+
+    <div class="container">
+        <div class="video-card">
+            <video id="video" autoplay playsinline></video>
+            <canvas id="canvas"></canvas>
+        </div>
+
+        <div class="panel">
+            <div class="card">
+                <h3>👤 Số người</h3>
+                <p id="count">0</p>
+            </div>
+
+            <div class="card">
+                <h3>⚙️ Model</h3>
+                <p>YOLOv8n</p>
+            </div>
+
+            <button onclick="start()">▶ Start Camera</button>
+        </div>
+    </div>
+
+    <footer>
+        YOLO Web AI Demo • Powered by ONNX Runtime
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web/dist/ort.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

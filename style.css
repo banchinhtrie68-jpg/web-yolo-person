@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #0f172a;
+    color: #e5e7eb;
+}
+
+header {
+    padding: 16px 32px;
+    background: #020617;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.status {
+    font-size: 14px;
+}
+
+.online {
+    color: #22c55e;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+    padding: 24px;
+}
+
+.video-card {
+    position: relative;
+    background: #020617;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+video,
+canvas {
+    width: 100%;
+    height: auto;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.panel {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.card {
+    background: #020617;
+    padding: 16px;
+    border-radius: 12px;
+}
+
+.card p {
+    font-size: 32px;
+    margin: 8px 0 0;
+    color: #38bdf8;
+}
+
+button {
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #3b82f6, #06b6d4);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+footer {
+    text-align: center;
+    padding: 12px;
+    font-size: 13px;
+    color: #94a3b8;
+}
+
+web-yolo-person/ │─ index.html │─ style.css │─ main.js │─ yolov8n.onnx
